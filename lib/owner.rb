@@ -57,7 +57,7 @@ class Owner
   end
 
   def sell_pets
-    @pets.collect do |species|
+    @pets.each_key do |species|
       species.collect {|pet| pet.mood = "nervous"}
     end
     @pets = []
