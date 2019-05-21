@@ -57,12 +57,13 @@ class Owner
   end
 
   def sell_pets
-    # @pets.each_key do |species|
-    #   species.collect {|pet| pet.mood = "nervous"}
-    # end
-    @pets[:fishes].collect {|pet| pet.mood = "nervous"}
-    @pets[:dogs].collect {|pet| pet.mood = "nervous"}
-    @pets[:cats].collect {|pet| pet.mood = "nervous"}
+    @pets.each_key do |species|
+      @pets[species].collect {|pet| pet.mood = "nervous"}
+    end
+
+    # @pets[:fishes].collect {|pet| pet.mood = "nervous"}
+    # @pets[:dogs].collect {|pet| pet.mood = "nervous"}
+    # @pets[:cats].collect {|pet| pet.mood = "nervous"}
     @pets = []
   end
 
