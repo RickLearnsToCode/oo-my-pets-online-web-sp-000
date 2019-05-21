@@ -60,8 +60,8 @@ class Owner
     @pets.each {|species| species.each {|pet| pet.mood = "nervous"}}
     @pets = []
   end
-  
-  
+
+
 
 
 
