@@ -1,6 +1,6 @@
 class Owner
   attr_reader :species
-  attr_accessor :name
+  attr_accessor :name, :pets
 
   @@all = []
 
@@ -26,6 +26,11 @@ class Owner
   def say_species
     "I am a #{@species}."
   end
+
+  def pets
+    @pets
+  end
+
 
   def buy_fish
     @pets[:fishes] << Fish.new
