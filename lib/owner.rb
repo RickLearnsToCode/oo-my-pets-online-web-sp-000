@@ -52,7 +52,7 @@ class Owner
     @pets[:cats].collect {|cat| cat.mood = "happy"}
   end
 
-  
+
 
 
 
